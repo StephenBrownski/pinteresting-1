@@ -14,6 +14,8 @@ gem 'bootstrap-sass'
 gem 'devise', '~> 3.2.2'
 # for image processing. Requires Imagemagick to be installed
 gem "paperclip", "~> 3.0"
+#installs AWS SDK for uploding files
+gem "aws-sdk", "~> 1.33.0"
 
 group :development, :test do
 	gem 'sqlite3'
