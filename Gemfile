@@ -8,8 +8,13 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+# allows for the import of bootstraps components 
 gem 'bootstrap-sass'
+# for user authentication
 gem 'devise', '~> 3.2.2'
+# for image processing. Requires Imagemagick to be installed
+gem "paperclip", "~> 3.0"
+
 group :development, :test do
 	gem 'sqlite3'
 end
