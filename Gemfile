@@ -9,13 +9,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 1.2'
-# allows for the import of bootstraps components 
 gem 'bootstrap-sass'
-# for user authentication
 gem 'devise', '~> 3.2.2'
-# for image processing. Requires Imagemagick to be installed
 gem 'paperclip', '~> 3.0'
-#installs AWS SDK for uploding files
 gem 'aws-sdk', '~> 1.33.0'
 gem 'masonry-rails'
 gem 'will_paginate', '~> 3.0'
@@ -25,11 +21,9 @@ group :development, :test do
 end
 group :production do
 	gem 'pg'
-	#gem 'rails_12factor'
-	# removed gem for testing on ninefold.com platform.
+	gem 'rails_12factor'
 end	
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
