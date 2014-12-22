@@ -1,29 +1,33 @@
 source 'https://rubygems.org'
-ruby '2.1.4'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
-gem 'sass-rails', '~> 4.0.0'
+ruby '2.1.5'
+
+gem 'rails', '4.2.0'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jquery-turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
-gem 'devise', '~> 3.2.2'
+gem 'devise', '~> 3.4.1'
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.33.0'
 gem 'masonry-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
 end
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
-end	
+end
+
 group :doc do
-  gem 'sdoc', require: false
+  gem 'sdoc', '~> 0.4.0'
 end
 
